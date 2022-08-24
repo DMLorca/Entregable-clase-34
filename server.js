@@ -102,6 +102,7 @@ app.engine(
 );
 
 app.get('/', (req, res) => {
+    console.log("GET /")
     res.render('login');
 });
 app.post('/', (req, res) => {
