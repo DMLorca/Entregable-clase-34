@@ -1,6 +1,6 @@
 const express = require('express');
 const passport = require('./passport');
-const session = require('express-session');
+const session = require('cookie-session');
 const cookieParser = require('cookie-parser');
 const MongoStore = require('connect-mongo');
 const {fork} = require('child_process');
