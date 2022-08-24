@@ -45,7 +45,7 @@ let credencial = {};
 //-------------- MODO FORK O CLUSTER ------------------
 const processId = process.pid;
 const isMaster = cluster.isMaster;
-const PORT = argv.port;
+const PORT = process.env.PORT || 8080;
 
 //console.log(`Proceso: ${processId} - isMaster: ${isMaster}`);
 
